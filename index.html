@@ -1,0 +1,1324 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chartered Accountants in Leeds | Care Accountancy</title>
+<meta name="description" content="ICAEW Chartered Accountants in Leeds. Accounts, tax returns, VAT and payroll for businesses, landlords, contractors and individuals. Call 0113 887 0218 for a free consultation.">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#B73235">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Semi+Condensed:wght@400;500;600&family=Raleway:wght@700;800;900&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  "name": "Care Accountancy – Leeds",
+  "url": "https://careaccountancy.co.uk/chartered-accountants-in-leeds/",
+  "telephone": "+44 113 887 0218",
+  "email": "leeds@careaccountancy.co.uk",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "94 Street Lane, Roundhay",
+    "addressLocality": "Leeds",
+    "postalCode": "LS8 2AL",
+    "addressCountry": "GB"
+  },
+  "areaServed": "Leeds"
+}
+</script>
+
+<style>
+/* Brand tokens taken from careaccountancy.co.uk */
+:root{
+  --red:#B73235;
+  --red-dark:#98282B;
+  --red-tint:#FBF1F1;
+  --ink:#181818;
+  --text:#3C3C40;
+  --muted:#6B6B73;
+  --grey-bg:#F4F4F7;
+  --grey-2:#ECECF1;
+  --line:#E3E3E8;
+  --white:#FFFFFF;
+  --dark:#1B1C20;
+  --wa:#25D366;
+  --wa-dark:#1EB257;
+  --radius:14px;
+  --pill:50px;
+  --shadow:0 10px 30px -12px rgba(24,24,24,.18);
+  --head:"Raleway", Arial, Helvetica, sans-serif;
+  --body:"Barlow", Arial, Helvetica, sans-serif;
+  --label:"Barlow Semi Condensed", Arial, Helvetica, sans-serif;
+  --callbar-h:72px;
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:84px;}
+body{
+  margin:0;background:var(--white);color:var(--text);
+  font-family:var(--body);font-size:17px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  padding-bottom:calc(var(--callbar-h) + env(safe-area-inset-bottom,0px));
+}
+img{max-width:100%;height:auto;display:block;}
+a{color:inherit;}
+h1,h2,h3{font-family:var(--head);color:var(--ink);margin:0;line-height:1.12;text-wrap:balance;}
+h1{font-weight:800;letter-spacing:-.03em;}
+h2{font-weight:800;letter-spacing:-.03em;font-size:clamp(28px,6.4vw,40px);}
+h3{font-weight:700;letter-spacing:-.01em;}
+p{margin:0;}
+.accent{color:var(--red);}
+.wrap{max-width:1160px;margin:0 auto;padding-inline:max(18px,env(safe-area-inset-left,0px));}
+.eyebrow{
+  font-family:var(--label);font-size:15px;font-weight:500;text-transform:uppercase;
+  letter-spacing:.08em;color:var(--ink);margin-bottom:10px;display:block;
+}
+.eyebrow.on-dark{color:rgba(255,255,255,.7);}
+.section{padding-block:56px;}
+.section-head{max-width:700px;margin-bottom:30px;}
+.section-head p{margin-top:12px;color:var(--muted);font-size:17px;}
+.bg-grey{background:var(--grey-bg);}
+:focus-visible{outline:3px solid var(--red);outline-offset:2px;}
+.ico{width:20px;height:20px;flex:none;}
+
+/* ---------- Buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  min-height:52px;padding:14px 26px;border-radius:var(--pill);
+  font-family:var(--body);font-weight:700;font-size:17px;line-height:1.1;
+  text-decoration:none;border:2px solid transparent;cursor:pointer;
+  transition:background-color .15s ease, border-color .15s ease, color .15s ease;
+}
+.btn-red{background:var(--red);color:#fff;}
+.btn-red:hover{background:var(--red-dark);}
+.btn-wa{background:var(--wa);color:#fff;}
+.btn-wa:hover{background:var(--wa-dark);}
+.btn-line{background:#fff;color:var(--ink);border-color:var(--ink);}
+.btn-line:hover{background:var(--ink);color:#fff;}
+.btn-white{background:#fff;color:var(--red);}
+.btn-white:hover{background:var(--red-tint);}
+.btn-block{width:100%;}
+.btn[disabled]{opacity:.7;cursor:default;}
+
+.call-xl{
+  display:flex;align-items:center;gap:14px;width:100%;
+  background:var(--red);color:#fff;text-decoration:none;
+  border-radius:18px;padding:16px 20px;box-shadow:0 12px 28px -12px rgba(183,50,53,.65);
+  transition:background-color .15s ease;
+}
+.call-xl:hover{background:var(--red-dark);}
+.call-xl .ring{width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center;flex:none;}
+.call-xl .ring .ico{width:24px;height:24px;}
+.call-xl small{display:block;font-family:var(--label);font-size:14px;letter-spacing:.06em;text-transform:uppercase;opacity:.85;}
+.call-xl strong{display:block;font-family:var(--head);font-weight:800;font-size:clamp(24px,7vw,30px);letter-spacing:-.01em;line-height:1.1;font-variant-numeric:tabular-nums;}
+
+.text-link{display:inline-flex;align-items:center;gap:6px;color:var(--red);font-weight:700;text-decoration:none;font-size:16px;}
+.text-link:hover{text-decoration:underline;}
+.text-link .ico{width:16px;height:16px;}
+
+/* ---------- Header ---------- */
+.site-header{
+  position:sticky;top:0;z-index:60;background:rgba(255,255,255,.97);
+  border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px);
+}
+.header-row{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px;}
+.logo img{height:28px;width:auto;}
+.topnav{display:none;gap:24px;}
+.topnav a{text-decoration:none;font-weight:600;font-size:15.5px;color:var(--ink);}
+.topnav a:hover{color:var(--red);}
+.header-call{
+  display:inline-flex;align-items:center;gap:8px;text-decoration:none;
+  background:var(--red);color:#fff;border-radius:var(--pill);
+  padding:10px 16px;font-weight:700;font-size:15px;white-space:nowrap;
+}
+.header-call .ico{width:18px;height:18px;}
+.header-call .num{display:none;font-variant-numeric:tabular-nums;}
+
+/* In-page tabs (mobile + tablet) */
+.chipnav{
+  display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;
+  margin:0 calc(-1 * max(18px,env(safe-area-inset-left,0px))) 22px;
+  padding-inline:max(18px,env(safe-area-inset-left,0px));
+}
+.chipnav::-webkit-scrollbar{display:none;}
+.chipnav a{
+  flex:none;text-decoration:none;background:#fff;border:1px solid var(--line);color:var(--ink);
+  font-weight:600;font-size:14.5px;padding:8px 14px;border-radius:var(--pill);white-space:nowrap;
+}
+.chipnav a.hl{border-color:var(--red);color:var(--red);}
+
+/* ---------- Hero ---------- */
+.hero{background:var(--grey-bg);padding-block:18px 40px;position:relative;overflow:hidden;}
+.hero::after{content:"";position:absolute;right:-180px;top:-160px;width:520px;height:520px;border-radius:50%;background:var(--grey-2);z-index:0;}
+.hero > .wrap{position:relative;z-index:1;}
+.hero-grid{display:grid;gap:32px;}
+.hero h1{font-size:clamp(36px,10vw,60px);}
+.hero-sub{margin-top:14px;font-size:18px;color:var(--text);max-width:560px;}
+.checks{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:9px;}
+.checks li{display:flex;gap:10px;align-items:flex-start;font-weight:600;color:var(--ink);font-size:16.5px;}
+.checks .tick{width:22px;height:22px;border-radius:50%;background:var(--red);color:#fff;flex:none;display:flex;align-items:center;justify-content:center;margin-top:2px;}
+.checks .tick svg{width:13px;height:13px;}
+.hero-cta{margin-top:24px;display:grid;gap:12px;max-width:520px;}
+.hero-alt{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.hero-alt .btn{padding-inline:12px;font-size:16px;}
+.hero-links{margin-top:16px;display:flex;flex-wrap:wrap;gap:10px 22px;}
+
+.callback-card{display:none;background:#fff;border-radius:20px;padding:30px;box-shadow:var(--shadow);border:1px solid var(--line);align-self:start;}
+.callback-card h2{font-size:26px;}
+.callback-card > p{color:var(--muted);margin-top:8px;font-size:16px;}
+
+/* ---------- Trust strip ---------- */
+.trust{border-bottom:1px solid var(--line);}
+.trust-grid{display:grid;grid-template-columns:1fr 1fr;}
+.trust-item{padding:20px 12px;display:flex;flex-direction:column;gap:3px;border-bottom:1px solid var(--line);}
+.trust-item:nth-child(odd){border-right:1px solid var(--line);padding-left:0;}
+.trust-item:nth-child(even){padding-left:16px;}
+.trust-item:nth-last-child(-n+2){border-bottom:none;}
+.trust-item strong{font-family:var(--head);font-weight:800;color:var(--ink);font-size:16px;letter-spacing:-.01em;}
+.trust-item span{font-size:14.5px;color:var(--muted);line-height:1.35;}
+
+/* ---------- Services ---------- */
+.services{display:grid;border-top:1px solid var(--line);}
+.service{display:flex;gap:16px;padding:20px 0;border-bottom:1px solid var(--line);}
+.service-ico{width:46px;height:46px;border-radius:12px;background:var(--red-tint);color:var(--red);display:flex;align-items:center;justify-content:center;flex:none;}
+.service-ico .ico{width:22px;height:22px;}
+.service h3{font-size:18px;}
+.service p{margin-top:4px;color:var(--muted);font-size:16px;line-height:1.5;}
+.services-foot{margin-top:28px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;}
+.services-foot p{color:var(--muted);font-size:16px;}
+
+/* ---------- CTA band ---------- */
+.band{background:var(--red);color:#fff;}
+.band-inner{padding-block:40px;display:grid;gap:20px;}
+.band h2{color:#fff;font-size:clamp(26px,6vw,34px);}
+.band p{color:rgba(255,255,255,.88);margin-top:8px;}
+.band .btn-white{font-size:18px;min-height:58px;}
+.band .num{font-variant-numeric:tabular-nums;}
+
+/* ---------- Who we help ---------- */
+.who-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.who{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px 16px;}
+.who h3{font-size:16.5px;}
+.who p{font-size:14.5px;color:var(--muted);margin-top:4px;line-height:1.45;}
+
+/* ---------- Why us ---------- */
+.why-grid{display:grid;gap:28px;}
+.why-list{display:grid;gap:22px;margin-top:28px;}
+.why{display:flex;gap:16px;}
+.why .mark{width:4px;border-radius:4px;background:var(--red);flex:none;}
+.why h3{font-size:19px;}
+.why p{margin-top:6px;color:var(--muted);font-size:16px;}
+.why-photo{border-radius:20px;overflow:hidden;position:relative;background:var(--grey-bg);}
+.why-photo img{width:100%;aspect-ratio:4/3;object-fit:cover;}
+.why-photo .tag{position:absolute;left:16px;bottom:16px;right:16px;background:#fff;border-radius:12px;padding:12px 16px;display:flex;align-items:center;gap:12px;box-shadow:var(--shadow);}
+.why-photo .tag strong{font-family:var(--head);font-weight:800;color:var(--ink);font-size:15px;display:block;}
+.why-photo .tag span{font-size:14px;color:var(--muted);}
+.why-photo .tag .service-ico{width:40px;height:40px;}
+
+/* ---------- Steps ---------- */
+.steps{display:grid;gap:14px;}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px;display:flex;gap:16px;}
+.step .n{font-family:var(--head);font-weight:900;font-size:20px;color:var(--red);width:44px;height:44px;border-radius:50%;border:2px solid var(--red);display:flex;align-items:center;justify-content:center;flex:none;}
+.step h3{font-size:18px;}
+.step p{margin-top:4px;color:var(--muted);font-size:16px;}
+
+/* ---------- Switch accountant ---------- */
+.switch-grid{display:grid;gap:28px;}
+.switch-lead{font-size:18px;color:var(--text);margin-top:14px;max-width:620px;}
+.switch-steps{display:grid;gap:0;margin-top:26px;border-left:2px solid var(--line);margin-left:21px;}
+.switch-step{position:relative;padding:0 0 24px 34px;}
+.switch-step:last-child{padding-bottom:0;}
+.switch-step .n{
+  position:absolute;left:-23px;top:-2px;width:44px;height:44px;border-radius:50%;background:var(--red);color:#fff;
+  font-family:var(--head);font-weight:900;font-size:18px;display:flex;align-items:center;justify-content:center;border:4px solid #fff;
+}
+.switch-step h3{font-size:18px;padding-top:8px;}
+.switch-step p{margin-top:4px;color:var(--muted);font-size:16px;}
+.handover{background:var(--grey-bg);border-radius:20px;padding:26px 24px;align-self:start;}
+.handover h3{font-size:20px;}
+.handover > p{color:var(--muted);font-size:15.5px;margin-top:6px;}
+.handover ul{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:12px;}
+.handover li{display:flex;gap:10px;align-items:flex-start;font-size:16px;color:var(--ink);font-weight:500;}
+.handover li .tick{width:22px;height:22px;border-radius:50%;background:var(--red);color:#fff;flex:none;display:flex;align-items:center;justify-content:center;margin-top:2px;}
+.handover li .tick svg{width:13px;height:13px;}
+.handover .cta{display:grid;gap:10px;margin-top:22px;}
+
+/* ---------- Testimonials ---------- */
+.quotes{
+  display:grid;grid-auto-flow:column;grid-auto-columns:86%;gap:14px;
+  overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px;
+  margin-inline:calc(-1 * max(18px,env(safe-area-inset-left,0px)));
+  padding-inline:max(18px,env(safe-area-inset-left,0px));scrollbar-width:thin;
+}
+.quote{scroll-snap-align:start;background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 24px;display:flex;flex-direction:column;margin:0;}
+.quote .qmark{font-family:var(--head);font-weight:900;font-size:54px;line-height:.6;color:var(--red);height:26px;}
+.quote h3{font-size:18px;margin-top:10px;}
+.quote blockquote{margin:10px 0 0;font-size:16.5px;color:var(--text);flex:1;}
+.quote .who-by{margin-top:18px;font-weight:700;color:var(--ink);font-size:15px;display:flex;align-items:center;gap:10px;}
+.quote .who-by .av{width:36px;height:36px;border-radius:50%;background:var(--grey-bg);color:var(--red);font-family:var(--head);font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;}
+.swipe-hint{margin-top:10px;font-size:14px;color:var(--muted);}
+
+/* ---------- Leeds office + map ---------- */
+.office-grid{display:grid;gap:18px;}
+.map-frame{border-radius:18px;overflow:hidden;border:1px solid var(--line);background:var(--grey-bg);aspect-ratio:4/3;width:100%;max-width:100%;}
+.map-frame iframe{width:100%;height:100%;border:0;display:block;}
+.office-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px;}
+.office-card h3{font-size:22px;margin-top:6px;}
+.office-card .sub{font-family:var(--label);text-transform:uppercase;letter-spacing:.08em;font-size:14px;color:var(--red);font-weight:600;}
+.contact-rows{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:14px;}
+.contact-rows li{display:flex;gap:12px;align-items:flex-start;}
+.contact-rows .ico{color:var(--red);margin-top:3px;}
+.contact-rows a{text-decoration:none;font-weight:600;color:var(--ink);overflow-wrap:anywhere;}
+.contact-rows a:hover{color:var(--red);}
+.contact-rows .big{font-family:var(--head);font-weight:800;font-size:22px;letter-spacing:-.01em;font-variant-numeric:tabular-nums;}
+.office-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px;}
+.office-actions .btn{padding-inline:10px;font-size:16px;}
+
+/* ---------- FAQ ---------- */
+.faq-list{display:grid;gap:10px;max-width:860px;}
+.faq{background:#fff;border:1px solid var(--line);border-radius:var(--radius);}
+.faq summary{list-style:none;cursor:pointer;padding:18px 20px;display:flex;justify-content:space-between;gap:16px;font-family:var(--head);font-weight:700;color:var(--ink);font-size:17px;line-height:1.35;}
+.faq summary::-webkit-details-marker{display:none;}
+.faq .pm{width:24px;height:24px;border-radius:50%;background:var(--red-tint);position:relative;flex:none;margin-top:1px;}
+.faq .pm::before,.faq .pm::after{content:"";position:absolute;left:50%;top:50%;background:var(--red);border-radius:2px;transform:translate(-50%,-50%);}
+.faq .pm::before{width:11px;height:2px;}
+.faq .pm::after{width:2px;height:11px;transition:transform .2s ease;}
+.faq[open] .pm::after{transform:translate(-50%,-50%) scaleY(0);}
+.faq .ans{padding:0 20px 20px;color:var(--text);font-size:16px;}
+.faq .ans a{color:var(--red);font-weight:600;}
+
+/* ---------- Contact hub ---------- */
+.final{background:var(--dark);color:#fff;}
+.final-grid{display:grid;gap:30px;padding-block:56px;}
+.final h2{color:#fff;font-size:clamp(30px,7vw,44px);}
+.final .lead{color:rgba(255,255,255,.78);margin-top:12px;font-size:17.5px;max-width:520px;}
+.final .hero-cta{margin-top:26px;}
+.final-points{list-style:none;margin:24px 0 0;padding:0;display:grid;gap:10px;color:rgba(255,255,255,.85);font-size:16px;}
+.final-points li{display:flex;gap:10px;align-items:flex-start;}
+.final-points .tick{width:22px;height:22px;border-radius:50%;background:rgba(255,255,255,.14);color:#fff;flex:none;display:flex;align-items:center;justify-content:center;margin-top:2px;}
+.final-points .tick svg{width:13px;height:13px;}
+
+.hub{background:#fff;color:var(--text);border-radius:20px;padding:18px 18px 24px;align-self:start;}
+.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;background:var(--grey-bg);border-radius:14px;padding:4px;}
+.tab{
+  font-family:var(--body);font-weight:700;font-size:14.5px;line-height:1.2;color:var(--muted);
+  background:transparent;border:0;border-radius:11px;padding:11px 6px;cursor:pointer;min-height:48px;
+}
+.tab[aria-selected="true"]{background:#fff;color:var(--ink);box-shadow:0 2px 8px -2px rgba(24,24,24,.18);}
+.tab[aria-selected="true"] .tab-dot{background:var(--red);}
+.tab-dot{display:block;width:6px;height:6px;border-radius:50%;background:transparent;margin:0 auto 5px;}
+.panel{padding:20px 4px 0;}
+.panel h3{font-size:22px;}
+.panel > p{color:var(--muted);margin-top:6px;font-size:15.5px;}
+.panel .live-slots{display:none;margin-top:12px;}
+
+/* ---------- Forms ---------- */
+.form{display:grid;gap:14px;margin-top:18px;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.field label,.field legend{display:block;font-weight:700;color:var(--ink);font-size:15px;margin-bottom:6px;padding:0;}
+.field .opt{font-weight:500;color:var(--muted);}
+fieldset.field{border:0;margin:0;padding:0;min-width:0;}
+.field input,.field select,.field textarea{
+  width:100%;min-height:52px;border:1.5px solid #CFCFD6;border-radius:12px;background:#fff;
+  padding:12px 14px;font-family:var(--body);font-size:17px;color:var(--ink);
+  -webkit-appearance:none;appearance:none;
+}
+.field textarea{min-height:92px;resize:vertical;line-height:1.45;}
+.field select{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23181818' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 16px center;padding-right:40px;
+}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--red);outline:none;box-shadow:0 0 0 3px rgba(183,50,53,.15);}
+.field [aria-invalid="true"]{border-color:var(--red);background-color:#FFF8F8;}
+.choices{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.choice{position:relative;}
+.choice input{position:absolute;opacity:0;width:1px;height:1px;}
+.choice span{
+  display:flex;align-items:center;justify-content:center;gap:8px;min-height:52px;border:1.5px solid #CFCFD6;border-radius:12px;
+  font-weight:700;color:var(--ink);cursor:pointer;font-size:16px;background:#fff;
+}
+.choice input:checked + span{border-color:var(--red);background:var(--red-tint);color:var(--red);}
+.choice input:focus-visible + span{outline:3px solid var(--red);outline-offset:2px;}
+.choices[aria-invalid="true"] .choice span{border-color:var(--red);}
+.hint{font-size:13.5px;color:var(--muted);margin-top:6px;}
+.form-fine{font-size:13.5px;color:var(--muted);line-height:1.45;}
+.form-msg{display:none;border-radius:12px;padding:14px 16px;font-size:15.5px;font-weight:600;}
+.form-msg.ok{display:block;background:#EAF6EE;color:#1D5E34;}
+.form-msg.err{display:block;background:var(--red-tint);color:var(--red-dark);}
+.form-msg .btn{margin-top:12px;min-height:46px;font-size:15.5px;padding:10px 18px;}
+
+/* ---------- All offices ---------- */
+.maps{display:grid;gap:16px;}
+.mapfig{margin:0;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;}
+.mapbox{position:relative;}
+.mapbox img{width:100%;height:auto;}
+.mapfig figcaption{padding:14px 18px;display:flex;justify-content:space-between;gap:12px;align-items:baseline;flex-wrap:wrap;}
+.mapfig figcaption strong{font-family:var(--head);font-weight:800;color:var(--ink);font-size:17px;}
+.mapfig figcaption span{font-size:13px;color:var(--muted);}
+.mk{position:absolute;width:0;height:0;text-decoration:none;}
+.mk .pin{position:absolute;left:-14px;top:-36px;width:28px;height:36px;filter:drop-shadow(0 3px 4px rgba(0,0,0,.35));}
+.mk .pin svg{width:100%;height:100%;display:block;}
+.mk .lbl{
+  position:absolute;top:-32px;white-space:nowrap;background:var(--ink);color:#fff;border-radius:8px;
+  padding:5px 10px;font-family:var(--head);font-weight:800;font-size:14px;letter-spacing:-.01em;line-height:1.25;
+  box-shadow:0 4px 10px -4px rgba(0,0,0,.4);
+}
+.mk .lbl small{display:block;font-family:var(--body);font-weight:500;font-size:12px;color:rgba(255,255,255,.75);letter-spacing:0;}
+.mk.r .lbl{left:18px;}
+.mk.l .lbl{right:18px;}
+.mk.home .lbl{background:var(--red);}
+.mk:hover .lbl,.mk:focus-visible .lbl{background:var(--red);}
+.map-attr{position:absolute;right:0;bottom:0;background:rgba(255,255,255,.85);font-size:11px;padding:2px 6px;color:#333;}
+
+.office-list{margin-top:18px;display:grid;gap:12px;}
+.orow{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px;display:grid;gap:12px;scroll-margin-top:96px;}
+.orow.is-home{border-color:var(--red);box-shadow:inset 4px 0 0 var(--red);}
+.orow .oname{font-family:var(--head);font-weight:800;color:var(--ink);font-size:19px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+.orow .badge{font-family:var(--label);font-size:12.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;background:var(--red-tint);color:var(--red);border-radius:var(--pill);padding:3px 10px;}
+.orow address{font-style:normal;color:var(--text);font-size:16px;line-height:1.5;}
+.orow .ocontact{display:grid;gap:8px;}
+.orow .ocontact a{display:flex;gap:10px;align-items:center;text-decoration:none;font-weight:600;color:var(--ink);font-size:16px;overflow-wrap:anywhere;}
+.orow .ocontact a:hover{color:var(--red);}
+.orow .ocontact .ico{width:18px;height:18px;color:var(--red);}
+.orow .odir{font-size:15px;font-weight:700;color:var(--red);text-decoration:none;display:inline-flex;gap:6px;align-items:center;}
+.orow .odir:hover{text-decoration:underline;}
+.orow .odir .ico{width:16px;height:16px;}
+
+/* ---------- Footer ---------- */
+.site-footer{border-top:1px solid var(--line);padding-block:32px;font-size:14.5px;color:var(--muted);}
+.footer-row{display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:center;}
+.footer-row img{height:26px;width:auto;}
+.footer-links{display:flex;flex-wrap:wrap;gap:6px 18px;}
+.footer-links a{text-decoration:none;}
+.footer-links a:hover{color:var(--red);}
+
+/* ---------- Sticky mobile call bar ---------- */
+.callbar{
+  position:fixed;left:0;right:0;bottom:0;z-index:70;background:#fff;
+  border-top:1px solid var(--line);box-shadow:0 -8px 24px -12px rgba(0,0,0,.25);
+  padding:10px max(12px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px));
+  display:flex;gap:10px;
+}
+.callbar a{display:flex;align-items:center;justify-content:center;gap:10px;min-height:52px;border-radius:14px;text-decoration:none;font-weight:700;font-size:17px;color:#fff;}
+.callbar .cb-call{flex:1;background:var(--red);}
+.callbar .cb-call .num{font-variant-numeric:tabular-nums;}
+.callbar .cb-wa{width:60px;flex:none;background:var(--wa);}
+.callbar .cb-wa .ico{width:26px;height:26px;}
+
+/* ---------- Tablet / desktop ---------- */
+@media (max-width:380px){
+  .form-row{grid-template-columns:1fr;}
+  .tab{font-size:13.5px;}
+}
+@media (min-width:600px){
+  .header-call .num{display:inline;}
+  .header-call .lbl{display:none;}
+  .logo img{height:34px;}
+  .trust-grid{grid-template-columns:repeat(4,1fr);}
+  .trust-item,.trust-item:nth-child(odd),.trust-item:nth-child(even){border-bottom:none;border-right:1px solid var(--line);padding:22px 18px;}
+  .trust-item:first-child{padding-left:0;}
+  .trust-item:last-child{border-right:none;}
+  .who-grid{grid-template-columns:repeat(3,1fr);}
+  .quotes{grid-auto-columns:calc(50% - 7px);}
+  .hub{padding:22px 24px 28px;}
+}
+@media (min-width:760px){
+  .maps{grid-template-columns:0.703fr 1.179fr;align-items:start;}
+  .orow{grid-template-columns:170px 1.2fr 1.6fr auto;align-items:center;gap:20px;}
+}
+@media (min-width:900px){
+  body{padding-bottom:0;}
+  .callbar{display:none;}
+  .section{padding-block:84px;}
+  .header-row{min-height:78px;}
+  .hero{padding-block:36px 72px;}
+  .hero::after{width:760px;height:760px;right:-200px;top:-260px;}
+  .hero-grid{grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;}
+  .callback-card{display:block;}
+  .hero-alt{grid-template-columns:1fr;}
+  .hero-alt .btn-line{display:none;}
+  .services{grid-template-columns:1fr 1fr;column-gap:48px;}
+  .band-inner{grid-template-columns:1fr auto;align-items:center;padding-block:44px;}
+  .why-grid{grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
+  .steps{grid-template-columns:repeat(3,1fr);gap:18px;}
+  .step{flex-direction:column;}
+  .switch-grid{grid-template-columns:1.15fr .85fr;gap:64px;}
+  .quotes{grid-auto-flow:row;grid-template-columns:repeat(4,1fr);grid-auto-columns:auto;overflow:visible;margin-inline:0;padding-inline:0;}
+  .swipe-hint{display:none;}
+  .office-grid{grid-template-columns:1.35fr 1fr;gap:24px;align-items:stretch;}
+  .map-frame{aspect-ratio:auto;min-height:440px;height:100%;}
+  .final-grid{grid-template-columns:1fr 1fr;gap:64px;align-items:start;padding-block:88px;}
+}
+@media (min-width:1100px){
+  .topnav{display:flex;}
+  .chipnav{display:none;}
+  .hero{padding-block:60px 72px;}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto;}*{transition:none!important;}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1l-2.2 2.23Z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M3.5 3.5a12 12 0 0 1 17 17 12 12 0 0 1-13.8 2.3l-5.8.7a.4.4 0 0 1-.4-.4l.7-5.8A12 12 0 0 1 3.5 3.5Zm3.6 17 .3.2a9.9 9.9 0 0 0 11.5-1.8 9.8 9.8 0 1 0-15.7-2.2l.2.3-.5 3.9c0 .1.1.2.2.2l4-.6Zm6.5-7-.9 1.2a9.8 9.8 0 0 1-3.5-3.5l1.2-1a.8.8 0 0 0 .2-.9L9.6 7a.8.8 0 0 0-.9-.4l-2 .5a.8.8 0 0 0-.6.9 11.8 11.8 0 0 0 10 10 .8.8 0 0 0 .9-.6l.5-2a.8.8 0 0 0-.4-1l-2.5-1a.8.8 0 0 0-1 .2Z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-5.6-7-11.2a7 7 0 0 1 14 0C19 15.4 12 21 12 21Z"/><circle cx="12" cy="9.8" r="2.6" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="m3.5 6.5 8.5 6 8.5-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-video" viewBox="0 0 24 24"><rect x="2" y="6" width="14" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="m16 10.5 6-3.5v10l-6-3.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 10h18M8 3v4M16 3v4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z M14 3v5h5 M9 13h6 M9 17h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 21a8 8 0 0 1 16 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2V5Z M4 19a2 2 0 0 1 2-2h13 M9 7h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-vat" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 7h8M8 11h2M12 11h2M8 15h2M12 15h2M8 18h8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-pay" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 10h18M7 15h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-trend" viewBox="0 0 24 24"><path d="m3 17 6-6 4 4 8-8M15 7h6v6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4.5 6v5.5c0 4.7 3.2 8.2 7.5 9.5 4.3-1.3 7.5-4.8 7.5-9.5V6L12 3Z M9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-mappin" viewBox="0 0 28 36"><path d="M14 0C6.3 0 0 6.1 0 13.7 0 24 14 36 14 36s14-12 14-22.3C28 6.1 21.7 0 14 0Z" fill="#B73235"/><circle cx="14" cy="13.5" r="5.2" fill="#fff"/></symbol>
+</svg>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="wrap header-row">
+    <span class="logo">
+      <img src="assets/care-logo.png" alt="Care Accountancy – ICAEW Chartered Accountants" width="545" height="72">
+    </span>
+    <nav class="topnav" aria-label="On this page">
+      <a href="#services">Services</a>
+      <a href="#switch">Switch accountant</a>
+      <a href="#contact" data-open-tab="meeting">Video meeting</a>
+      <a href="#offices">Our offices</a>
+      <a href="#faq">FAQs</a>
+    </nav>
+    <a class="header-call" href="tel:+441138870218" data-track="call" data-loc="header" aria-label="Call our Leeds office on 0113 887 0218">
+      <svg class="ico"><use href="#i-phone"/></svg>
+      <span class="lbl">Call now</span><span class="num">0113 887 0218</span>
+    </a>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="wrap">
+    <nav class="chipnav" aria-label="On this page">
+      <a href="#services">Services</a>
+      <a class="hl" href="#switch">Switch accountant</a>
+      <a href="#contact" data-open-tab="meeting">Book a video meeting</a>
+      <a href="#offices">Our offices</a>
+      <a href="#faq">FAQs</a>
+    </nav>
+  </div>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Local Leeds accountants you can trust</span>
+      <h1><span class="accent">Chartered Accountants</span> in Leeds</h1>
+      <p class="hero-sub">Accounts, tax returns, VAT and payroll for businesses, landlords, contractors and individuals — from an ICAEW Chartered firm with a dedicated office in Roundhay.</p>
+
+      <ul class="checks">
+        <li><span class="tick"><svg><use href="#i-check"/></svg></span>Free, no-obligation consultation</li>
+        <li><span class="tick"><svg><use href="#i-check"/></svg></span>Transparent fees, agreed before we start</li>
+        <li><span class="tick"><svg><use href="#i-check"/></svg></span>Speak directly to a qualified accountant</li>
+      </ul>
+
+      <div class="hero-cta">
+        <a class="call-xl" href="tel:+441138870218" data-track="call" data-loc="hero">
+          <span class="ring"><svg class="ico"><use href="#i-phone"/></svg></span>
+          <span><small>Tap to call our Leeds team</small><strong>0113 887 0218</strong></span>
+        </a>
+        <div class="hero-alt">
+          <a class="btn btn-wa" href="https://wa.me/447484601560?text=Hello%2C%20I%27d%20like%20to%20speak%20to%20an%20accountant%20at%20your%20Leeds%20office." target="_blank" rel="noopener" data-track="whatsapp" data-loc="hero">
+            <svg class="ico"><use href="#i-wa"/></svg>WhatsApp
+          </a>
+          <a class="btn btn-line" href="#contact" data-open-tab="callback">Request a callback</a>
+        </div>
+      </div>
+      <div class="hero-links">
+        <a class="text-link" href="#contact" data-open-tab="meeting"><svg class="ico"><use href="#i-video"/></svg>Book a Zoom or Google Meet call</a>
+        <a class="text-link" href="#switch">Switching accountant? <svg class="ico"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+
+    <!-- Desktop only: callback form beside the hero -->
+    <aside class="callback-card" aria-labelledby="cb1-title">
+      <h2 id="cb1-title">Request a free callback</h2>
+      <p>Leave your details and a Leeds accountant will call you back.</p>
+      <form class="form js-lead-form" data-kind="callback" data-form="hero-callback" novalidate>
+        <div class="field">
+          <label for="cb1-name">Name</label>
+          <input id="cb1-name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="cb1-phone">Phone number</label>
+          <input id="cb1-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
+        </div>
+        <div class="field">
+          <label for="cb1-email">Email address <span class="opt">(optional)</span></label>
+          <input id="cb1-email" name="email" type="email" autocomplete="email" inputmode="email">
+        </div>
+        <div class="field">
+          <label for="cb1-service">What do you need help with? <span class="opt">(optional)</span></label>
+          <select id="cb1-service" name="service">
+            <option value="">Select a service</option>
+            <option>Annual / company accounts</option>
+            <option>Self Assessment tax return</option>
+            <option>Bookkeeping</option>
+            <option>VAT / Making Tax Digital</option>
+            <option>Payroll</option>
+            <option>Tax planning</option>
+            <option>Switching accountant</option>
+            <option>HMRC enquiry</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <button class="btn btn-red btn-block" type="submit">Request my callback</button>
+        <p class="form-fine">We'll only use your details to respond to your enquiry.</p>
+        <div class="form-msg" role="status" aria-live="polite"></div>
+      </form>
+    </aside>
+  </div>
+</section>
+
+<!-- ================= TRUST STRIP ================= -->
+<section class="trust" aria-label="Why clients trust us">
+  <div class="wrap trust-grid">
+    <div class="trust-item"><strong>ICAEW Chartered</strong><span>Qualified, regulated accountants</span></div>
+    <div class="trust-item"><strong>Leeds office</strong><span>94 Street Lane, Roundhay</span></div>
+    <div class="trust-item"><strong>Transparent fees</strong><span>Clear pricing, agreed upfront</span></div>
+    <div class="trust-item"><strong>5 UK offices</strong><span>Leeds, Batley, Bradford, Birmingham &amp; London</span></div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">See what we do</span>
+      <h2>Our accounting services <span class="accent">in Leeds</span></h2>
+      <p>Everything a small business, landlord or self-employed professional needs to stay compliant and keep more of what they earn.</p>
+    </div>
+    <div class="services">
+      <div class="service"><span class="service-ico"><svg class="ico"><use href="#i-doc"/></svg></span><div><h3>Annual Accounts</h3><p>Year-end and statutory accounts for sole traders, partnerships and limited companies, prepared and filed on time.</p></div></div>
+      <div class="service"><span class="service-ico"><svg class="ico"><use href="#i-user"/></svg></span><div><h3>Self Assessment Tax Returns</h3><p>Personal tax returns for company directors, landlords, contractors and the self-employed.</p></div></div>
+      <div class="service"><span class="service-ico"><svg class="ico"><use href="#i-book"/></svg></span><div><h3>Bookkeeping</h3><p>Accurate, up-to-date records so you always know where your business stands.</p></div></div>
+      <div class="service"><span class="service-ico"><svg class="ico"><use href="#i-vat"/></svg></span><div><h3>VAT &amp; Making Tax Digital</h3><p>VAT registration, quarterly returns and MTD-compliant digital record keeping.</p></div></div>
+      <div class="service"><span class="service-ico"><svg class="ico"><use href="#i-pay"/></svg></span><div><h3>Payroll &amp; Auto-Enrolment</h3><p>Payslips, RTI submissions to HMRC and workplace pension duties, every pay run.</p></div></div>
+      <div class="service"><span class="service-ico"><svg class="ico"><use href="#i-trend"/></svg></span><div><h3>Business &amp; Corporate Tax Planning</h3><p>Corporation tax, capital gains tax and R&amp;D tax credit claims, planned to minimise your liability.</p></div></div>
+      <div class="service"><span class="service-ico"><svg class="ico"><use href="#i-chart"/></svg></span><div><h3>Management Accounts</h3><p>Monthly or quarterly figures that give you a clear view of performance and cash flow.</p></div></div>
+      <div class="service"><span class="service-ico"><svg class="ico"><use href="#i-shield"/></svg></span><div><h3>HMRC Tax Investigations</h3><p>Experienced representation and support if HMRC opens an enquiry into your affairs.</p></div></div>
+    </div>
+    <div class="services-foot">
+      <a class="btn btn-red" href="tel:+441138870218" data-track="call" data-loc="services"><svg class="ico"><use href="#i-phone"/></svg>Call 0113 887 0218</a>
+      <p>Not sure what you need? We'll talk it through with you.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MID CTA BAND ================= -->
+<section class="band" aria-label="Call us">
+  <div class="wrap band-inner">
+    <div>
+      <h2>Speak to a Leeds accountant today</h2>
+      <p>Your first consultation is free, with no obligation to go ahead.</p>
+    </div>
+    <a class="btn btn-white" href="tel:+441138870218" data-track="call" data-loc="band"><svg class="ico"><use href="#i-phone"/></svg><span class="num">0113 887 0218</span></a>
+  </div>
+</section>
+
+<!-- ================= WHO WE HELP ================= -->
+<section class="section bg-grey" id="who">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Who we work with</span>
+      <h2>Accountants for Leeds businesses <span class="accent">and individuals</span></h2>
+    </div>
+    <div class="who-grid">
+      <div class="who"><h3>Limited companies</h3><p>Accounts, corporation tax and director payroll.</p></div>
+      <div class="who"><h3>Sole traders</h3><p>Bookkeeping, tax returns and allowable expenses.</p></div>
+      <div class="who"><h3>Startups</h3><p>Company formation, projections and first-year set-up.</p></div>
+      <div class="who"><h3>Landlords</h3><p>Rental accounts, property tax and disclosures.</p></div>
+      <div class="who"><h3>Contractors</h3><p>Limited company and IR35-aware accounting.</p></div>
+      <div class="who"><h3>Individuals</h3><p>Self Assessment, capital gains and inheritance tax.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY US ================= -->
+<section class="section" id="why">
+  <div class="wrap why-grid">
+    <div>
+      <span class="eyebrow">Why Care Accountancy</span>
+      <h2>Trusted tax and accounting <span class="accent">services in Leeds</span></h2>
+      <div class="why-list">
+        <div class="why"><span class="mark"></span><div><h3>ICAEW Chartered Accountants</h3><p>Your work is handled by qualified professionals bound by the ICAEW's standards of competence and ethics.</p></div></div>
+        <div class="why"><span class="mark"></span><div><h3>Advice tailored to you</h3><p>Practical, proactive guidance built around your business and goals, not a one-size-fits-all package.</p></div></div>
+        <div class="why"><span class="mark"></span><div><h3>Transparent pricing</h3><p>Clear fees agreed before any work begins, so there are no surprise bills.</p></div></div>
+        <div class="why"><span class="mark"></span><div><h3>Local and accessible</h3><p>A dedicated Leeds office in Roundhay, video meetings when they suit you better, and the backing of a five-office practice.</p></div></div>
+      </div>
+    </div>
+    <div class="why-photo">
+      <img src="assets/meeting.jpg" alt="Care Accountancy accountants in a client meeting" width="768" height="512" loading="lazy">
+      <div class="tag">
+        <span class="service-ico"><svg class="ico"><use href="#i-shield"/></svg></span>
+        <div><strong>ICAEW Chartered Accountants</strong><span>Leeds · Batley · Bradford · Birmingham · London</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+<section class="section bg-grey" id="how">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">How it works</span>
+      <h2>Getting started is <span class="accent">simple</span></h2>
+    </div>
+    <div class="steps">
+      <div class="step"><span class="n">1</span><div><h3>Call, book a video meeting or request a callback</h3><p>Tell us about your business and what you need help with.</p></div></div>
+      <div class="step"><span class="n">2</span><div><h3>Free consultation</h3><p>We review your situation and explain exactly how we can help.</p></div></div>
+      <div class="step"><span class="n">3</span><div><h3>A clear, fixed quote</h3><p>You receive our fee proposal in writing, with no obligation to proceed.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SWITCH ACCOUNTANT ================= -->
+<section class="section" id="switch">
+  <div class="wrap switch-grid">
+    <div>
+      <span class="eyebrow">Switching accountant?</span>
+      <h2>Change accountants <span class="accent">without the hassle</span></h2>
+      <p class="switch-lead">Slow replies, surprise bills or no proactive advice? Moving to Care Accountancy is simpler than most people expect, and you don't have to wait for your year-end to switch.</p>
+
+      <div class="switch-steps">
+        <div class="switch-step"><span class="n">1</span><h3>Free review call</h3><p>We look at where your accounts and tax stand today and what deadlines are coming up.</p></div>
+        <div class="switch-step"><span class="n">2</span><h3>Fixed-fee proposal</h3><p>You receive a clear quote in writing before you commit to anything.</p></div>
+        <div class="switch-step"><span class="n">3</span><h3>We handle the handover</h3><p>With your authority, we contact your current accountant for professional clearance and your records. You don't need to have that conversation.</p></div>
+        <div class="switch-step"><span class="n">4</span><h3>We take it from here</h3><p>We're authorised as your agent with HMRC and take ownership of your deadlines.</p></div>
+      </div>
+    </div>
+
+    <aside class="handover" aria-labelledby="handover-title">
+      <h3 id="handover-title">What we take care of</h3>
+      <p>Everything involved in moving your accounts to us.</p>
+      <ul>
+        <li><span class="tick"><svg><use href="#i-check"/></svg></span>Professional clearance letter to your current accountant</li>
+        <li><span class="tick"><svg><use href="#i-check"/></svg></span>Transfer of your records and previous accounts</li>
+        <li><span class="tick"><svg><use href="#i-check"/></svg></span>Authorisation as your tax agent with HMRC</li>
+        <li><span class="tick"><svg><use href="#i-check"/></svg></span>Companies House filing access, where needed</li>
+        <li><span class="tick"><svg><use href="#i-check"/></svg></span>A review of upcoming deadlines so nothing is missed</li>
+      </ul>
+      <div class="cta">
+        <a class="btn btn-red btn-block" href="#contact" data-open-tab="switch">Start my switch</a>
+        <a class="btn btn-line btn-block" href="tel:+441138870218" data-track="call" data-loc="switch"><svg class="ico"><use href="#i-phone"/></svg>0113 887 0218</a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="section bg-grey" id="reviews">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Client testimonials</span>
+      <h2>What our clients <span class="accent">say about us</span></h2>
+    </div>
+    <div class="quotes" tabindex="0" aria-label="Client testimonials">
+      <figure class="quote">
+        <span class="qmark" aria-hidden="true">“</span>
+        <h3>Absolutely spot-on!</h3>
+        <blockquote>Excellent accountants, extremely personable and diligent. My business success has been enhanced via the support of Care Accountancy. Thank you!</blockquote>
+        <figcaption class="who-by"><span class="av" aria-hidden="true">JD</span>Joseph Darcy</figcaption>
+      </figure>
+      <figure class="quote">
+        <span class="qmark" aria-hidden="true">“</span>
+        <h3>Best services</h3>
+        <blockquote>They look after company accounts as well as my payroll and VAT… I highly recommend this company as they are very helpful.</blockquote>
+        <figcaption class="who-by"><span class="av" aria-hidden="true">IM</span>Irkhab Mehrban</figcaption>
+      </figure>
+      <figure class="quote">
+        <span class="qmark" aria-hidden="true">“</span>
+        <h3>Professional advice</h3>
+        <blockquote>Care Accountancy are excellent accountants who provide excellent financial advice as well as a wide range of services. They are highly professional.</blockquote>
+        <figcaption class="who-by"><span class="av" aria-hidden="true">ZS</span>Zulqarnain Saddique</figcaption>
+      </figure>
+      <figure class="quote">
+        <span class="qmark" aria-hidden="true">“</span>
+        <h3>Best decision ever</h3>
+        <blockquote>Very helpful accountants and easy to work with. Would highly recommend.</blockquote>
+        <figcaption class="who-by"><span class="av" aria-hidden="true">FN</span>Frankie Neale</figcaption>
+      </figure>
+    </div>
+    <p class="swipe-hint">Swipe to read more →</p>
+  </div>
+</section>
+
+<!-- ================= LEEDS OFFICE + MAP ================= -->
+<section class="section" id="leeds-office">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Our office in Leeds</span>
+      <h2>Visit us <span class="accent">in Roundhay</span></h2>
+    </div>
+    <div class="office-grid">
+      <div class="map-frame">
+        <iframe
+          title="Map showing Care Accountancy, 94 Street Lane, Roundhay, Leeds LS8 2AL"
+          src="https://maps.google.com/maps?q=94%20Street%20Lane%2C%20Roundhay%2C%20Leeds%20LS8%202AL&amp;z=15&amp;output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+      <div class="office-card">
+        <span class="sub">Care Accountancy – Leeds</span>
+        <h3>Leeds Office</h3>
+        <ul class="contact-rows">
+          <li><svg class="ico"><use href="#i-pin"/></svg><span>94 Street Lane<br>Roundhay<br>Leeds LS8 2AL</span></li>
+          <li><svg class="ico"><use href="#i-phone"/></svg><a class="big" href="tel:+441138870218" data-track="call" data-loc="office-card">0113 887 0218</a></li>
+          <li><svg class="ico"><use href="#i-mail"/></svg><a href="mailto:leeds@careaccountancy.co.uk" data-track="email" data-loc="office-card">leeds@careaccountancy.co.uk</a></li>
+        </ul>
+        <div class="office-actions">
+          <a class="btn btn-red" href="tel:+441138870218" data-track="call" data-loc="office-card-btn"><svg class="ico"><use href="#i-phone"/></svg>Call</a>
+          <a class="btn btn-line" href="https://www.google.com/maps/dir/?api=1&amp;destination=94%20Street%20Lane%2C%20Leeds%20LS8%202AL" target="_blank" rel="noopener" data-track="directions" data-loc="leeds">Directions</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="section bg-grey" id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Frequently asked questions</span>
+      <h2>Questions we're <span class="accent">often asked</span></h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq">
+        <summary>Is the first consultation really free?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">Yes. Your initial consultation is free and there's no obligation to go ahead. It's a chance for us to understand your situation and for you to decide whether we're the right fit.</div>
+      </details>
+      <details class="faq">
+        <summary>How much do your services cost?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">Fees depend on the size and complexity of your affairs. We'll agree a clear fee with you before any work begins, so you know exactly what you're paying.</div>
+      </details>
+      <details class="faq">
+        <summary>How do I switch from my current accountant?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">Just get in touch. With your permission we contact your existing accountant for professional clearance, collect your records and take over your deadlines, so there's very little for you to do. <a href="#switch">See how switching works</a>.</div>
+      </details>
+      <details class="faq">
+        <summary>Can we meet by video instead of at the office?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">Yes. You're welcome to visit us on Street Lane in Roundhay, or <a href="#contact" data-open-tab="meeting">book a Zoom or Google Meet meeting</a> at a time that suits you. Many clients work with us entirely by phone, email and video.</div>
+      </details>
+      <details class="faq">
+        <summary>Which accounting software do you work with?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">We work with the leading cloud accounting platforms, including Xero, QuickBooks and Sage, and can help you move to digital records for Making Tax Digital.</div>
+      </details>
+      <details class="faq">
+        <summary>Are you regulated?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">Yes. Care Accountancy is a firm of ICAEW Chartered Accountants, so we're held to the Institute's professional and ethical standards.</div>
+      </details>
+      <details class="faq">
+        <summary>Can you help if HMRC has opened an enquiry?<span class="pm" aria-hidden="true"></span></summary>
+        <div class="ans">Yes. We support clients through HMRC tax investigations and enquiries, and can deal with HMRC on your behalf. Call us as early as possible so we can advise on next steps.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT HUB ================= -->
+<section class="final" id="contact">
+  <div class="wrap final-grid">
+    <div>
+      <span class="eyebrow on-dark">Get in touch</span>
+      <h2>Talk to a Chartered Accountant in Leeds today</h2>
+      <p class="lead">Call now for a free, no-obligation consultation, or choose the option that suits you best.</p>
+      <div class="hero-cta">
+        <a class="call-xl" href="tel:+441138870218" data-track="call" data-loc="contact">
+          <span class="ring"><svg class="ico"><use href="#i-phone"/></svg></span>
+          <span><small>Call our Leeds team</small><strong>0113 887 0218</strong></span>
+        </a>
+        <a class="btn btn-wa" href="https://wa.me/447484601560?text=Hello%2C%20I%27d%20like%20to%20speak%20to%20an%20accountant%20at%20your%20Leeds%20office." target="_blank" rel="noopener" data-track="whatsapp" data-loc="contact"><svg class="ico"><use href="#i-wa"/></svg>Message us on WhatsApp</a>
+      </div>
+      <ul class="final-points">
+        <li><span class="tick"><svg><use href="#i-check"/></svg></span>Request a callback at a time that suits you</li>
+        <li><span class="tick"><svg><use href="#i-check"/></svg></span>Book a free Zoom or Google Meet consultation</li>
+        <li><span class="tick"><svg><use href="#i-check"/></svg></span>Start switching from your current accountant</li>
+      </ul>
+    </div>
+
+    <div class="hub">
+      <div class="tabs" role="tablist" aria-label="Ways to contact us">
+        <button class="tab" role="tab" id="tab-callback" aria-controls="panel-callback" aria-selected="true" data-tab="callback" type="button"><span class="tab-dot"></span>Callback</button>
+        <button class="tab" role="tab" id="tab-meeting" aria-controls="panel-meeting" aria-selected="false" data-tab="meeting" tabindex="-1" type="button"><span class="tab-dot"></span>Video meeting</button>
+        <button class="tab" role="tab" id="tab-switch" aria-controls="panel-switch" aria-selected="false" data-tab="switch" tabindex="-1" type="button"><span class="tab-dot"></span>Switch accountant</button>
+      </div>
+
+      <!-- Callback -->
+      <div class="panel" role="tabpanel" id="panel-callback" aria-labelledby="tab-callback">
+        <h3>Request a callback</h3>
+        <p>Leave your details and a Leeds accountant will call you back.</p>
+        <form class="form js-lead-form" data-kind="callback" data-form="contact-callback" novalidate>
+          <div class="field">
+            <label for="cb2-name">Name</label>
+            <input id="cb2-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="cb2-phone">Phone number</label>
+            <input id="cb2-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
+          </div>
+          <div class="field">
+            <label for="cb2-email">Email address <span class="opt">(optional)</span></label>
+            <input id="cb2-email" name="email" type="email" autocomplete="email" inputmode="email">
+          </div>
+          <div class="field">
+            <label for="cb2-time">Best time to call <span class="opt">(optional)</span></label>
+            <select id="cb2-time" name="best_time">
+              <option value="">Any time</option>
+              <option>Morning</option>
+              <option>Afternoon</option>
+            </select>
+          </div>
+          <button class="btn btn-red btn-block" type="submit">Request my callback</button>
+          <p class="form-fine">We'll only use your details to respond to your enquiry.</p>
+          <div class="form-msg" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+
+      <!-- Video meeting -->
+      <div class="panel" role="tabpanel" id="panel-meeting" aria-labelledby="tab-meeting" hidden>
+        <h3>Book a video meeting</h3>
+        <p>A free 30-minute consultation on Zoom or Google Meet. Choose a preferred time and we'll confirm it by email with your meeting link.</p>
+        <p class="live-slots"><a class="text-link js-booking-page" href="#" target="_blank" rel="noopener"><svg class="ico"><use href="#i-cal"/></svg>See live availability in our Google Calendar</a></p>
+        <form class="form js-lead-form" data-kind="meeting" data-form="video-meeting" novalidate>
+          <div class="field">
+            <label for="mt-name">Name</label>
+            <input id="mt-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="mt-phone">Phone number</label>
+              <input id="mt-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
+            </div>
+            <div class="field">
+              <label for="mt-email">Email address</label>
+              <input id="mt-email" name="email" type="email" autocomplete="email" inputmode="email" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="mt-service">What would you like to discuss?</label>
+            <select id="mt-service" name="service" required>
+              <option value="">Select a service</option>
+              <option>Annual / company accounts</option>
+              <option>Self Assessment tax return</option>
+              <option>Bookkeeping</option>
+              <option>VAT / Making Tax Digital</option>
+              <option>Payroll</option>
+              <option>Tax planning</option>
+              <option>Switching accountant</option>
+              <option>HMRC enquiry</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="mt-details">Enquiry details <span class="opt">(optional)</span></label>
+            <textarea id="mt-details" name="details" placeholder="Anything that will help us prepare, e.g. business type or deadlines"></textarea>
+          </div>
+          <fieldset class="field">
+            <legend>Meeting type</legend>
+            <div class="choices" data-group="meeting_type">
+              <label class="choice"><input type="radio" name="meeting_type" value="Zoom" required><span><svg class="ico"><use href="#i-video"/></svg>Zoom</span></label>
+              <label class="choice"><input type="radio" name="meeting_type" value="Google Meet"><span><svg class="ico"><use href="#i-video"/></svg>Google Meet</span></label>
+            </div>
+          </fieldset>
+          <div class="form-row">
+            <div class="field">
+              <label for="mt-date">Preferred date</label>
+              <input id="mt-date" name="date" type="date" required>
+            </div>
+            <div class="field">
+              <label for="mt-time">Preferred time</label>
+              <select id="mt-time" name="time" required>
+                <option value="">Select</option>
+                <option>09:00</option><option>09:30</option><option>10:00</option><option>10:30</option>
+                <option>11:00</option><option>11:30</option><option>12:00</option><option>12:30</option>
+                <option>13:00</option><option>13:30</option><option>14:00</option><option>14:30</option>
+                <option>15:00</option><option>15:30</option><option>16:00</option><option>16:30</option>
+              </select>
+            </div>
+          </div>
+          <p class="hint" style="margin-top:-6px;">Monday to Friday, UK time.</p>
+          <button class="btn btn-red btn-block" type="submit"><svg class="ico"><use href="#i-cal"/></svg>Request my meeting</button>
+          <p class="form-fine">We'll only use your details to arrange your meeting.</p>
+          <div class="form-msg" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+
+      <!-- Switch accountant -->
+      <div class="panel" role="tabpanel" id="panel-switch" aria-labelledby="tab-switch" hidden>
+        <h3>Switch to Care Accountancy</h3>
+        <p>Tell us a little about your situation and we'll call you to plan the move. We handle the handover with your current accountant.</p>
+        <form class="form js-lead-form" data-kind="switch" data-form="switch-accountant" novalidate>
+          <div class="field">
+            <label for="sw-name">Name</label>
+            <input id="sw-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="sw-phone">Phone number</label>
+              <input id="sw-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
+            </div>
+            <div class="field">
+              <label for="sw-email">Email address</label>
+              <input id="sw-email" name="email" type="email" autocomplete="email" inputmode="email" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="sw-type">You are a…</label>
+            <select id="sw-type" name="client_type" required>
+              <option value="">Select</option>
+              <option>Limited company</option>
+              <option>Sole trader</option>
+              <option>Partnership / LLP</option>
+              <option>Landlord</option>
+              <option>Contractor</option>
+              <option>Individual</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="sw-current">Current accountant <span class="opt">(optional)</span></label>
+            <input id="sw-current" name="current_accountant" type="text" placeholder="Firm name">
+          </div>
+          <div class="field">
+            <label for="sw-reason">Main reason for switching <span class="opt">(optional)</span></label>
+            <select id="sw-reason" name="reason">
+              <option value="">Select</option>
+              <option>Slow responses / hard to reach</option>
+              <option>Fees</option>
+              <option>Want more proactive advice</option>
+              <option>Moving from doing it myself</option>
+              <option>Business has outgrown them</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <button class="btn btn-red btn-block" type="submit">Start my switch</button>
+          <p class="form-fine">We won't contact your current accountant until you've given us your authority.</p>
+          <div class="form-msg" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ALL OFFICES ================= -->
+<section class="section bg-grey" id="offices">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Our locations</span>
+      <h2>Our offices <span class="accent">across England</span></h2>
+      <p>Five offices, each with its own local team. Select a city on the map to see its contact details.</p>
+    </div>
+
+    <div class="maps">
+      <figure class="mapfig">
+        <div class="mapbox">
+          <img src="assets/offices-uk.jpg" alt="Map of England showing Care Accountancy offices in West Yorkshire (Leeds, Bradford and Batley), Birmingham and London" width="603" height="858" loading="lazy">
+          <a class="mk r" href="#map-wy" style="left:29.71%;top:12.86%;"><span class="pin"><svg><use href="#i-mappin"/></svg></span><span class="lbl">West Yorkshire<small>Leeds · Bradford · Batley</small></span></a>
+          <a class="mk r" href="#office-birmingham" style="left:24.99%;top:60.15%;"><span class="pin"><svg><use href="#i-mappin"/></svg></span><span class="lbl">Birmingham</span></a>
+          <a class="mk l" href="#office-london" style="left:75.19%;top:91.9%;"><span class="pin"><svg><use href="#i-mappin"/></svg></span><span class="lbl">London</span></a>
+          <span class="map-attr">© OpenStreetMap contributors</span>
+        </div>
+        <figcaption><strong>England</strong><span>5 offices</span></figcaption>
+      </figure>
+
+      <figure class="mapfig" id="map-wy">
+        <div class="mapbox">
+          <img src="assets/offices-west-yorkshire.jpg" alt="Map of West Yorkshire showing Care Accountancy offices in Leeds, Bradford and Batley" width="980" height="831" loading="lazy">
+          <a class="mk l home" href="#office-leeds" style="left:80.68%;top:13.24%;"><span class="pin"><svg><use href="#i-mappin"/></svg></span><span class="lbl">Leeds<small>Roundhay</small></span></a>
+          <a class="mk r" href="#office-bradford" style="left:15.38%;top:35.26%;"><span class="pin"><svg><use href="#i-mappin"/></svg></span><span class="lbl">Bradford</span></a>
+          <a class="mk r" href="#office-batley" style="left:44.14%;top:89.28%;"><span class="pin"><svg><use href="#i-mappin"/></svg></span><span class="lbl">Batley</span></a>
+          <span class="map-attr">© OpenStreetMap contributors</span>
+        </div>
+        <figcaption><strong>West Yorkshire</strong><span>Leeds · Bradford · Batley</span></figcaption>
+      </figure>
+    </div>
+
+    <div class="office-list">
+      <div class="orow is-home" id="office-leeds">
+        <div class="oname">Leeds <span class="badge">This office</span></div>
+        <address>94 Street Lane, Roundhay<br>Leeds LS8 2AL</address>
+        <div class="ocontact">
+          <a href="tel:+441138870218" data-track="call" data-loc="office-leeds"><svg class="ico"><use href="#i-phone"/></svg>0113 887 0218</a>
+          <a href="mailto:leeds@careaccountancy.co.uk" data-track="email" data-loc="office-leeds"><svg class="ico"><use href="#i-mail"/></svg>leeds@careaccountancy.co.uk</a>
+        </div>
+        <a class="odir" href="https://www.google.com/maps/dir/?api=1&amp;destination=94%20Street%20Lane%2C%20Leeds%20LS8%202AL" target="_blank" rel="noopener" data-track="directions" data-loc="leeds">Directions <svg class="ico"><use href="#i-arrow"/></svg></a>
+      </div>
+
+      <div class="orow" id="office-bradford">
+        <div class="oname">Bradford</div>
+        <address>370A Otley Road<br>Bradford BD2 4QR</address>
+        <div class="ocontact">
+          <a href="tel:+441274296345" data-track="call" data-loc="office-bradford"><svg class="ico"><use href="#i-phone"/></svg>01274 296345</a>
+          <a href="mailto:bradford@careaccountancy.co.uk" data-track="email" data-loc="office-bradford"><svg class="ico"><use href="#i-mail"/></svg>bradford@careaccountancy.co.uk</a>
+        </div>
+        <a class="odir" href="https://www.google.com/maps/dir/?api=1&amp;destination=370A%20Otley%20Road%2C%20Bradford%20BD2%204QR" target="_blank" rel="noopener" data-track="directions" data-loc="bradford">Directions <svg class="ico"><use href="#i-arrow"/></svg></a>
+      </div>
+
+      <div class="orow" id="office-batley">
+        <div class="oname">Batley</div>
+        <address>504B Bradford Road<br>Batley WF17 5JY</address>
+        <div class="ocontact">
+          <a href="tel:+441924927447" data-track="call" data-loc="office-batley"><svg class="ico"><use href="#i-phone"/></svg>01924 927447</a>
+          <a href="mailto:batley@careaccountancy.co.uk" data-track="email" data-loc="office-batley"><svg class="ico"><use href="#i-mail"/></svg>batley@careaccountancy.co.uk</a>
+        </div>
+        <a class="odir" href="https://www.google.com/maps/dir/?api=1&amp;destination=504B%20Bradford%20Road%2C%20Batley%20WF17%205JY" target="_blank" rel="noopener" data-track="directions" data-loc="batley">Directions <svg class="ico"><use href="#i-arrow"/></svg></a>
+      </div>
+
+      <div class="orow" id="office-birmingham">
+        <div class="oname">Birmingham</div>
+        <address>9 Sheaf Lane, Coventry Road<br>Birmingham B26 3EJ</address>
+        <div class="ocontact">
+          <a href="tel:+441217268542" data-track="call" data-loc="office-birmingham"><svg class="ico"><use href="#i-phone"/></svg>0121 726 8542</a>
+          <a href="mailto:birmingham@careaccountancy.co.uk" data-track="email" data-loc="office-birmingham"><svg class="ico"><use href="#i-mail"/></svg>birmingham@careaccountancy.co.uk</a>
+        </div>
+        <a class="odir" href="https://www.google.com/maps/dir/?api=1&amp;destination=9%20Sheaf%20Lane%2C%20Birmingham%20B26%203EJ" target="_blank" rel="noopener" data-track="directions" data-loc="birmingham">Directions <svg class="ico"><use href="#i-arrow"/></svg></a>
+      </div>
+
+      <div class="orow" id="office-london">
+        <div class="oname">London</div>
+        <address>180 King's Cross Road<br>London WC1X 9DE</address>
+        <div class="ocontact">
+          <a href="tel:+442080908998" data-track="call" data-loc="office-london"><svg class="ico"><use href="#i-phone"/></svg>020 8090 8998</a>
+          <a href="mailto:london@careaccountancy.co.uk" data-track="email" data-loc="office-london"><svg class="ico"><use href="#i-mail"/></svg>london@careaccountancy.co.uk</a>
+        </div>
+        <a class="odir" href="https://www.google.com/maps/dir/?api=1&amp;destination=180%20King%27s%20Cross%20Road%2C%20London%20WC1X%209DE" target="_blank" rel="noopener" data-track="directions" data-loc="london">Directions <svg class="ico"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <img src="assets/care-logo.png" alt="Care Accountancy – ICAEW Chartered Accountants" width="545" height="72" loading="lazy">
+    <div class="footer-links">
+      <span>© Care Accountancy. All rights reserved.</span>
+      <!-- TODO: add the site's privacy policy URL (required for Google Ads when collecting form data) -->
+      <a href="#privacy-policy">Privacy policy</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= STICKY MOBILE CALL BAR ================= -->
+<nav class="callbar" aria-label="Contact us">
+  <a class="cb-call" href="tel:+441138870218" data-track="call" data-loc="sticky-bar"><svg class="ico"><use href="#i-phone"/></svg>Call <span class="num">0113 887 0218</span></a>
+  <a class="cb-wa" href="https://wa.me/447484601560?text=Hello%2C%20I%27d%20like%20to%20speak%20to%20an%20accountant%20at%20your%20Leeds%20office." target="_blank" rel="noopener" data-track="whatsapp" data-loc="sticky-bar" aria-label="Message us on WhatsApp"><svg class="ico"><use href="#i-wa"/></svg></a>
+</nav>
+
+<script>
+(function () {
+  /* ---- Settings: fill these in before the page goes live ---- */
+  /* Where form submissions are sent (Fluent Forms / Contact Form 7 REST endpoint, CRM webhook, etc.).
+     While empty, submissions are NOT sent anywhere. */
+  var FORM_ENDPOINT = '';
+  /* Optional: a Google Calendar appointment schedule (booking page) link. When set, the
+     video-meeting tab shows a "See live availability" link to it. */
+  var BOOKING_PAGE_URL = '';
+  var OFFICE_EMAIL = 'leeds@careaccountancy.co.uk';
+  var PHONE = '0113 887 0218';
+
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function track(eventName, params) {
+    params = params || {};
+    if (typeof window.gtag === 'function') window.gtag('event', eventName, params);
+    if (Array.isArray(window.dataLayer)) window.dataLayer.push(Object.assign({ event: eventName }, params));
+  }
+  var EVENTS = { call: 'click_to_call', whatsapp: 'whatsapp_click', email: 'email_click', directions: 'directions_click' };
+  document.addEventListener('click', function (e) {
+    var el = e.target.closest('[data-track]');
+    if (el) track(EVENTS[el.dataset.track] || el.dataset.track, { link_location: el.dataset.loc || '' });
+  });
+
+  /* ---- Contact tabs ---- */
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab'));
+  function openTab(name, focusTab) {
+    tabs.forEach(function (t) {
+      var on = t.dataset.tab === name;
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      t.tabIndex = on ? 0 : -1;
+      document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+      if (on && focusTab) t.focus();
+    });
+  }
+  tabs.forEach(function (t, i) {
+    t.addEventListener('click', function () { openTab(t.dataset.tab); });
+    t.addEventListener('keydown', function (e) {
+      var d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+      if (!d) return;
+      e.preventDefault();
+      openTab(tabs[(i + d + tabs.length) % tabs.length].dataset.tab, true);
+    });
+  });
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest('[data-open-tab]');
+    if (!a) return;
+    e.preventDefault();
+    openTab(a.dataset.openTab);
+    document.getElementById('contact').scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth' });
+  });
+  var HASH_TABS = { '#book': 'meeting', '#meeting': 'meeting', '#callback': 'callback', '#start-switch': 'switch' };
+  if (HASH_TABS[location.hash]) {
+    openTab(HASH_TABS[location.hash]);
+    document.getElementById('contact').scrollIntoView();
+  }
+
+  /* ---- Booking page link ---- */
+  if (BOOKING_PAGE_URL) {
+    var bp = document.querySelector('.js-booking-page');
+    bp.href = BOOKING_PAGE_URL;
+    bp.parentNode.style.display = 'block';
+  }
+
+  /* ---- Meeting date limits: from tomorrow, weekdays only ---- */
+  function ymd(d) { return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
+  var dateInput = document.getElementById('mt-date');
+  var tomorrow = new Date(); tomorrow.setDate(tomorrow.getDate() + 1);
+  var maxDate = new Date(); maxDate.setDate(maxDate.getDate() + 60);
+  dateInput.min = ymd(tomorrow);
+  dateInput.max = ymd(maxDate);
+  function parseDate(v) { var p = v.split('-'); return new Date(+p[0], +p[1] - 1, +p[2]); }
+
+  function calendarLink(d) {
+    var date = d.date.replace(/-/g, '');
+    var hm = d.time.split(':');
+    var start = new Date(2000, 0, 1, +hm[0], +hm[1]);
+    var end = new Date(start.getTime() + 30 * 60000);
+    function t(x) { return String(x.getHours()).padStart(2, '0') + String(x.getMinutes()).padStart(2, '0') + '00'; }
+    var details = [
+      d.meeting_type + ' consultation with Care Accountancy (Leeds).',
+      'Your meeting link will be emailed to you when we confirm the booking.',
+      '',
+      'Name: ' + d.name, 'Phone: ' + d.phone, 'Email: ' + d.email, 'Service: ' + d.service
+    ].concat(d.details ? ['Details: ' + d.details] : []).join('\n');
+    var q = new URLSearchParams({
+      action: 'TEMPLATE',
+      text: 'Care Accountancy – ' + d.meeting_type + ' consultation',
+      dates: date + 'T' + t(start) + '/' + date + 'T' + t(end),
+      ctz: 'Europe/London',
+      details: details,
+      location: d.meeting_type,
+      add: OFFICE_EMAIL
+    });
+    return 'https://calendar.google.com/calendar/render?' + q.toString();
+  }
+
+  /* ---- Forms ---- */
+  var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+  function invalidFields(form) {
+    var bad = [];
+    Array.prototype.forEach.call(form.elements, function (el) {
+      if (!el.name || el.type === 'submit' || el.type === 'radio') return;
+      var v = el.value.trim(), ok = true;
+      if (el.required && !v) ok = false;
+      else if (el.type === 'tel' && v && v.replace(/[^\d]/g, '').length < 10) ok = false;
+      else if (el.type === 'email' && v && !EMAIL_RE.test(v)) ok = false;
+      else if (el.type === 'date' && v) {
+        var d = parseDate(v), day = d.getDay();
+        if (v < el.min || v > el.max || day === 0 || day === 6) ok = false;
+      }
+      el.setAttribute('aria-invalid', ok ? 'false' : 'true');
+      if (!ok) bad.push(el);
+    });
+    form.querySelectorAll('.choices').forEach(function (group) {
+      var radios = group.querySelectorAll('input[type=radio]');
+      var needed = radios[0] && radios[0].required;
+      var ok = !needed || Array.prototype.some.call(radios, function (r) { return r.checked; });
+      group.setAttribute('aria-invalid', ok ? 'false' : 'true');
+      if (!ok) bad.push(radios[0]);
+    });
+    return bad;
+  }
+
+  function niceDate(v) {
+    return parseDate(v).toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
+  }
+
+  document.querySelectorAll('.js-lead-form').forEach(function (form) {
+    var msg = form.querySelector('.form-msg');
+    var btn = form.querySelector('button[type="submit"]');
+    var btnHTML = btn.innerHTML;
+    var kind = form.dataset.kind;
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      msg.className = 'form-msg';
+      msg.textContent = '';
+      var bad = invalidFields(form);
+      if (bad.length) {
+        var dateBad = bad.some(function (el) { return el.type === 'date' && el.value; });
+        msg.textContent = dateBad
+          ? 'Please choose a weekday within the next 60 days for your meeting.'
+          : 'Please fill in the highlighted fields.';
+        msg.classList.add('err');
+        bad[0].focus();
+        return;
+      }
+
+      var data = Object.fromEntries(new FormData(form).entries());
+      data.form = form.dataset.form;
+      data.page = location.href;
+      var first = data.name.trim().split(' ')[0];
+
+      function done() {
+        track('generate_lead', { form_name: form.dataset.form });
+        msg.classList.add('ok');
+        if (kind === 'meeting') {
+          msg.textContent = 'Thank you, ' + first + '. We\'ve received your request for a ' + data.meeting_type +
+            ' meeting on ' + niceDate(data.date) + ' at ' + data.time + '. We\'ll email ' + data.email +
+            ' to confirm the time and send your meeting link.';
+          var cal = document.createElement('a');
+          cal.className = 'btn btn-red';
+          cal.href = calendarLink(data);
+          cal.target = '_blank';
+          cal.rel = 'noopener';
+          cal.textContent = 'Add to Google Calendar';
+          cal.addEventListener('click', function () { track('add_to_calendar', { form_name: form.dataset.form }); });
+          msg.appendChild(document.createElement('br'));
+          msg.appendChild(cal);
+        } else if (kind === 'switch') {
+          msg.textContent = 'Thank you, ' + first + '. One of our accountants will call you to plan your switch. There\'s nothing you need to do until then.';
+        } else {
+          msg.textContent = 'Thank you, ' + first + '. A member of our Leeds team will call you back shortly. For an immediate answer, call ' + PHONE + '.';
+        }
+        btn.disabled = true;
+        btn.textContent = 'Request received';
+      }
+      function fail() {
+        msg.textContent = 'Sorry, your request could not be sent. Please call us on ' + PHONE + '.';
+        msg.classList.add('err');
+        btn.disabled = false;
+        btn.innerHTML = btnHTML;
+      }
+
+      if (!FORM_ENDPOINT) {
+        console.warn('FORM_ENDPOINT is not set: this request was not sent anywhere.', data);
+        done();
+        return;
+      }
+      btn.disabled = true;
+      btn.textContent = 'Sending…';
+      fetch(FORM_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) })
+        .then(function (r) { if (!r.ok) throw new Error(r.status); done(); })
+        .catch(fail);
+    });
+  });
+})();
+</script>
+</body>
+</html>
